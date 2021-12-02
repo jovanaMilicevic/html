@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Podaci</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body id="bod2">
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="biografija.html" class="logo"><img src=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Pocetna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="biografija.html" class="nav-link">Biografija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galerija.html" class="nav-link">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link">Kontakt</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="podaci.html" class="nav-link">Podaci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="game.html" class="nav-link">Igrica</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="drugicontainer">
+        <form name="mojaForma">
+            <table class="table2">
+                <tr class="lab">
+                    <td class="local ">Lokalna memorija</td>
+                    <td id="localstorage"></td>
+                </tr>
+                <tr class="lab">
+                    <td class="session ">Cela sesija</td>
+                    <td id="sessionstorage"></td>
+                </tr>
+                <tr>
+                    <td class="local"><button class="btn" type="button" onclick="readStorage(localStorage,keys,values,'localstorage')">Prikazi podatke sacuvane u lokalnoj memoriji:</button></td>
+                    <td class="session"><button class="btn" type="button" onclick="readStorage(sessionStorage,keys,values,'sessionstorage')">Prikazi podatke sacuvane u celoj sesiji:</button></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+    </body>
+    </html>

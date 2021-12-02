@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body id="bod">
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="biografija.html" class="logo"><img src=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Pocetna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="biografija.html" class="nav-link">Biografija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galerija.html" class="nav-link">Galerija</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="kontakt.html" class="nav-link">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="podaci.html" class="nav-link">Podaci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="game.html" class="nav-link">Igrica</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container2">
+        <form name="mojaforma">
+            <table class="table">
+                <tr>
+                    <td class="item animate-left"><label for="ime" >Ime</label></td>
+                    <td class="box animate-right"><input type="text" id="ime" name="ime"  autocomplete="off"></td>
+                    <td class="greska"><p class="greska" id="prva"></p></td>
+                </tr>
+                <tr>
+                    <td class="item animate-left"><label for="prezime">Prezime</label></td>
+                    <td class="box animate-right"><input type="text" id="prezime" name="prezime" autocomplete="off"></td>
+                    <td><p class="greska" id="druga"></p></td>
+                </tr>
+                <tr>
+                    <td class="item animate-left"><label for="sifra">Lozinka</label></td>
+                    <td class="box animate-right"><input type="password" id="sifra" name="sifra"  autocomplete="off"></td>
+                    <td><p class="greska" id="treca"></p></td>
+                </tr>
+                <tr>
+                    <td class="item animate-left"><label for="potvrdasifra">Potvrda lozinke</label></td>
+                    <td class="box animate-right"><input type="password" id="potvrdasifra" name="potvrdasifra"  autocomplete="off"></td>
+                    <td><p class="greska" id="cetvrta"></p></td>
+                </tr>
+                <tr>
+                    <td class="item animate-left"><label for="email">Email</label></td>
+                    <td class="box bx animate-right"><input type="email" id="email" name="email" placeholder="example@gmail.com"></td>
+                    <td><p class="greska" id="peta"></p></td>
+                </tr>
+                <tr>
+                    <td class="item animate-left"><label for="broj">Broj telefona</label></td>
+                    <td class="box bx animate-right"><input type="tel" id="broj" name="broj" placeholder="063/123456" ></td>
+                    <td><p class="greska" id="sesta"></p></td>
+                </tr>
+                <tr>
+                    <td><button class="button animate-bottom" type="button" onclick="imeprovera()">Posalji</button></td>
+                </tr>
+            </table>
+        </form>     
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
