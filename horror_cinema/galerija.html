@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+
+    <div class="navigacija">
+      <nav class="navigacioni-bar">
+        <div id="navigacioni-logo"><img src="img/logo.webp" alt=""></div>
+        <div class="meni-toggle" id="mobie-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-meni">
+          <li class="pomeri"><a href="index.html" class="nav-linkovi">Pocetna</a></li>
+          <li class="pomeri"><a href="repertoar.html" class="nav-linkovi">Repertoar</a></li>
+          <li class="pomeri"><a href="o-filmovima.html" class="nav-linkovi">O filmovima</a></li>
+          <li class="pomeri"><a href="galerija.html" class="nav-linkovi">Galerija</a></li>
+          <li class="pomeri"><a href="kontakt.html" class="nav-linkovi nav-link-dugme">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+
+<div class="con">
+  <img id="track" src="img/track.jpeg" alt="" style="height: 700px; width: 700px; margin-left: 25%; position: absolute; top: 10%;">
+        <div class="row mt-5">
+          <div class="col-lg-3 animiraj">
+            <img src="img/pic1.jpg" alt="">
+          </div>
+          <div class="col-lg-3 animiraj"></div>
+          <div class="col-lg-3 animiraj"></div>
+          <div class="col-lg-3 animiraj">
+            <img src="img/pic3.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="row mt-5">
+            
+            <div class="col-lg-3 animiraj">
+              <img src="img/pic6.jpg" alt="">
+            </div>
+            <div class="col-lg-3 animiraj">
+              <img src="img/pic7.jpg" alt="">
+            </div>
+            <div class="col-lg-3 animiraj"></div>
+            <div class="col-lg-3 animiraj">
+              <img src="img/pic8.jpeg" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-lg-3 animiraj">
+              <img src="img/pic9.jpg" alt="">
+            </div>
+            <div class="col-lg-3 animiraj"></div>
+
+            <div class="col-lg-3 animiraj">
+              <img src="img/pic13.png" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+              <div class="col-lg-3 animiraj"></div>
+            <div class="col-lg-3 animiraj">
+              <img src="img/pic21.jpg" alt="">
+            </div>
+
+            </div>
+            <div class="col-lg-3 animiraj"></div>
+            <div class="col-lg-3 animiraj"></div>
+            <div class="col-lg-3 animiraj">
+              <img src="img/pic24.jpg.png" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-3  animiraj"></div>
+            <div class="col-lg-3 animiraj"></div>
+            <div class="col-lg-3 animiraj">
+                <img src="img/pic2.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-3 animiraj">
+                <img src="img/pic19.jpg" alt="">
+              </div>
+              <div class="col-lg-3 animiraj"></div>
+              <div class="col-lg-3 animiraj">
+                <img src="img/pic23.jpg" alt="">
+              </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-3 animiraj">
+                <img src="img/pic5.webp" alt="">
+              </div>
+              <div class="col-lg-3 animiraj"></div>
+              <div class="col-lg-3 animiraj">
+                <a href="igra.html"><img src="img/track.jpeg" alt="" style="width: 22%; height: 22%;"></a>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 animiraj"></div>
+            <div class="col-lg-3 animiraj">
+                <img src="img/pic4.jpg" alt="">
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 animiraj"></div>
+            <div class="col-lg-3 animiraj">
+                <img src="img/pic12.jpg" alt="">
+              </div>
+          </div>
+        </div>
+
+        <img src="img/j4.gif" id="jumpscare" alt="" style="position: fixed; bottom: 12%; width: 80%; height: 80%; margin-left: 9%;">
+<style>
+    img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    html,body
+    {
+        background-image: url("img/findme.jpg");  
+    }
+    .con
+    {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @media  screen and (max-width:1000px) {
+      #track
+      {
+        margin-left: -30px !important;
+      }
+      #jumpscare
+      {
+        height: 600px !important;
+      }
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $(".animiraj").css({opacity:"0"});
+        $(".animiraj").mouseenter(function(){
+            $(this).css({opacity:"1"});
+        })
+        $(".animiraj").mouseleave(function(){
+            $(this).css({opacity:"0"});
+        });
+    });
+    $(document).ready(function(){
+        $("#track").fadeOut(3000);
+    });
+
+    $("#jumpscare").hide();
+    $(document).ready(function(){
+      $("#appear").mouseenter(function(){
+        $("#jumpscare").show();
+        setTimeout(function(){
+          $("#jumpscare").hide();
+        },1400);
+      });
+    });
+
+
+</script>
+<script src="menii.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <footer>
+			<div class="row text-center">
+				<div class="col-12">
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="#">Do</a></li>
+						<li class="list-inline-item"><a href="#">you</a></li>
+						<li class="list-inline-item"><a href="#">want</a></li>
+						<li class="list-inline-item"><a href="#">to</a></li>
+						<li class="list-inline-item"><a href="#">feel </a></li>
+ 						<li id="appear" class="list-inline-item"><a href="#">scared?</a></li>
+					</ul>
+				</div>    
+        	</div> 
+      	</footer>
+  </body>
+</html>

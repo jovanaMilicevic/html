@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="dugme.css">
+
+    <title>IT follows, come say hi</title>
+  </head>
+  <body>
+    
+    <div class="navigacija">
+      <nav class="navigacioni-bar">
+        <div id="navigacioni-logo"><img src="img/logo.webp" alt=""></div>
+        <div class="meni-toggle" id="mobie-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-meni">
+          <li class="pomeri"><a href="index.html" class="nav-linkovi">Pocetna</a></li>
+          <li class="pomeri"><a href="repertoar.html" class="nav-linkovi">Repertoar</a></li>
+          <li class="pomeri"><a href="o-filmovima.html" class="nav-linkovi">O filmovima</a></li>
+          <li class="pomeri"><a href="galerija.html" class="nav-linkovi">Galerija</a></li>
+          <li class="pomeri"><a href="kontakt.html" class="nav-linkovi nav-link-dugme">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="container text-danger pb-3 pt-3 ">
+        <form >
+          <div class="mb-3">
+            <label for="ime" class="form-label">Ime</label>
+            <input type="text" class="form-control" id="ime">
+          </div>
+            <div class="mb-3">
+              <label for="mail" class="form-label ">Email adresa</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" id="mail">
+              <div id="emailHelp" class="form-text text-info">Ni najveci zlikovci nece ukrasti tvoje informacije</div>
+            </div>
+            <div class="mb-3">
+              <label for="lozinka" class="form-label">Lozinka</label>
+              <input type="password" class="form-control" id="lozinka">
+            </div>
+            <button type="submit" id="submit" class="posalji">Posalji</button>
+          </form>
+
+        </div>
+    </div>
+    <img src="img/j4.gif" id="jumpscare" alt="" style="position: fixed; bottom: 12%; width: 80%; height: 80%; margin-left: 9%;">
+    <style>
+        html,body{
+            background-image: url("img/it3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container{
+            background-color: rgba(0, 0, 0, 0.637);
+            margin-top: 3%;
+        }
+        @media screen and (max-width: 997px) {
+          #jumpscare
+          {
+            height: 600px !important;
+          }
+        }
+    </style>
+
+<script src="menii.js"></script>
+    <script> 
+      $("#submit").click(function(){
+        var ime = $("#ime").val();
+        var mail = $("#mail").val();
+        var pass = $("#lozinka").val();
+        if(ime == "" && mail == "" && pass == "")
+        {
+          alert("Niste uneli vase podatke");
+            return false;
+        }
+        else if( ime == "" && mail == "")
+          {
+            alert("Niste uneli vase ime i email");
+            return false;
+          }
+          else if( ime == "" && pass=="")
+          {
+            alert("Niste uneli vase ime i password");
+            return false;
+          }
+          else if( mail == "" && pass=="")
+          {
+            alert("Niste uneli vas email niti lozinku");
+            return false;
+          }
+          else if( ime == "")
+          {
+            alert("Niste uneli vase ime");
+            return false;
+          }
+          else if(mail == "")
+          {
+            alert("Niste uneli vas email");
+            return false;
+          }
+          else if(pass == "")
+          {
+            alert("Niste uneli vas password");
+            return false;
+          }
+        else
+        {
+          alert("Dobrodosli u horor, zvanicno ste clan SCARE AUDIENCE-a!!!")
+          return true;
+        }
+      });
+
+
+    $("#jumpscare").hide();
+    $(document).ready(function(){
+      $("#appear").mouseenter(function(){
+        $("#jumpscare").show();
+        setTimeout(function(){
+          $("#jumpscare").hide();
+        },1400);
+      });
+    });
+      
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <footer style="position: absolute; width: 100%;bottom: 0px;">
+			<div class="row text-center">
+				<div class="col-12">
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="#">Do</a></li>
+						<li class="list-inline-item"><a href="#">you</a></li>
+						<li class="list-inline-item"><a href="#">want</a></li>
+						<li class="list-inline-item"><a href="#">to</a></li>
+						<li class="list-inline-item"><a href="#">feel </a></li>
+ 						<li id="appear" class="list-inline-item"><a href="#">scared?</a></li>
+					</ul>
+				</div>    
+      </div> 
+    </footer>
+  </body>
+</html>

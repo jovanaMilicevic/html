@@ -1,0 +1,62 @@
+html body {
+  background-image: url(img/woods.jpg);
+}
+
+html body p, html body .naslov-filmova, html body .dodatak2 {
+  font-family: 'Orelega One', cursive;
+}
+
+html body .naslov-filmova {
+  color: red;
+  font-size: 24px;
+}
+
+html .card {
+  background-color: rgba(0, 0, 0, 0.63);
+  color: white;
+  border-color: red;
+  height: 95%;
+}
+
+html .card .card-body {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+html .card .card-text {
+  margin-bottom: 10%;
+}
+
+.dodatak {
+  font-size: 14px;
+  padding-top: 20px;
+  margin-top: 10%;
+  padding-bottom: 0px;
+  color: #707070;
+}
+
+.dodatak2 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  margin-top: 20%;
+  padding-bottom: 2px;
+  color: #707070;
+}
+
+@media screen and (max-width: 991px) {
+  .dodatak {
+    position: relative;
+    bottom: 20px;
+  }
+  .dodatak2 {
+    position: relative;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .dodatak2 {
+    bottom: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

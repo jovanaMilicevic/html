@@ -1,0 +1,103 @@
+html, body {
+  background-image: url("img/saw puppet.jpg");
+  height: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  margin-left: 10%;
+  font-weight: bold;
+  color: #500303;
+  text-decoration: underline;
+  text-shadow: 40px 40px rgba(85, 2, 2, 0.13);
+}
+
+.a1 {
+  width: 60%;
+  margin-left: 5%;
+  margin-top: 15%;
+  margin-right: 0px;
+  display: block;
+  text-decoration: none;
+}
+
+.a2 {
+  width: 60%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 0px;
+  display: block;
+  text-decoration: none;
+}
+
+.dugme#play {
+  width: 100%;
+  height: 100px;
+  margin-top: 15%;
+  display: block;
+  background-image: url("img/bg2.jpg");
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 6px 6px black;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dugme:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0.4rem 1.4rem 0 rgba(85, 2, 2, 0.664);
+          box-shadow: 0 0.4rem 1.4rem 0 rgba(85, 2, 2, 0.664);
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.dugme#highscore {
+  width: 100%;
+  height: 100px;
+  margin-top: 5%;
+  display: block;
+  background-image: url("img/bg2.jpg");
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 6px 6px black;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1399px) {
+  h1 {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  html, body {
+    background-image: url("img/saw.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 40px;
+    margin-left: 5%;
+  }
+  button {
+    margin-left: 15%;
+    margin-right: 0;
+  }
+  #play, .a1 {
+    margin-top: 30%;
+  }
+  #highscore, .a2 {
+    font-size: 30px !important;
+    margin-top: 20%;
+  }
+}
+/*# sourceMappingURL=kviz.css.map */

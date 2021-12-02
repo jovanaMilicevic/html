@@ -1,0 +1,206 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navigacija {
+  width: 100%;
+  background-color: #130505cc;
+}
+
+.navigacija .navigacioni-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.navigacija .navigacioni-bar #navigacioni-logo {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.navigacija .navigacioni-bar #navigacioni-logo img {
+  width: 140px;
+  margin-top: 2px;
+}
+
+.navigacija .navigacioni-bar .nav-linkovi {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigacija .navigacioni-bar .nav-linkovi:hover {
+  color: #F94230;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.navigacija .navigacioni-bar .nav-linkovi.nav-link-dugme {
+  background-color: #f9433dcc;
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+
+.navigacija .navigacioni-bar .nav-linkovi.nav-link-dugme:hover {
+  background-color: transparent;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: solid 1px #F94230;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.nav-meni {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70%;
+  justify-self: end;
+  margin-left: 20%;
+}
+
+.pomeri {
+  margin-top: 15px;
+  padding-left: 10%;
+}
+
+.meni-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .navigacija {
+    position: relative;
+  }
+  .pomeri {
+    margin-left: -15% !important;
+  }
+  .nav-meni {
+    display: block;
+    background: #F94230;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #navigacioni-logo {
+    margin-left: 20px;
+  }
+  .nav-meni.active {
+    background: #130505cc;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .nav-linkovi {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
+  }
+  .nav-linkovi:hover {
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.541) 2%, #570e07 90%);
+    color: #fff !important;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  .nav-linkovi.nav-link-dugme {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: #130505cc !important;
+    color: #fff;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  .nav-linkovi.nav-link-dugme:hover {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.267) 2%, #330703cb 90%);
+    color: #fff;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  #mobie-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    -webkit-transform: translate(5%, 20%);
+            transform: translate(5%, 20%);
+  }
+  .meni-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+  .meni-toggle:hover {
+    cursor: pointer;
+  }
+  #mobie-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #mobie-menu.is-active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  #mobie-menu.is-active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .navigacioni-bar {
+    width: 100%;
+  }
+}
+
+footer {
+  padding: 2rem;
+  background-color: #130505cc;
+  margin-top: 3.7rem;
+  text-align: center;
+}
+
+footer a {
+  color: #910e0e;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+  padding: 0.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer p {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  color: #380101;
+  text-decoration: none;
+}
+/*# sourceMappingURL=footer.css.map */
